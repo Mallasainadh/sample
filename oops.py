@@ -216,7 +216,7 @@ a.house()
 a.car()'''
 
 #hierarchical-inheritance
-class Employee():#parent
+'''class Employee():#parent
     def company(self):
         print("codegnan it soluction")
 class Trainer(Employee):#child1
@@ -229,17 +229,80 @@ a=Trainer()
 a.teaching()
 a.company()
 b=Developer()
-b.code()
+b.code()'''
         
-        
+#hybrid inheritance
+
+'''class person():
+    def details(self):
+        print("sainadh")
+class trainer():
+    def teaching(self):
+        print("trainer teach the code")
+class student():
+    def study(self):
+        print("preparing for exam")
+class program_manager(trainer,student):
+    def manager(self):
+        print("assign the classes")
+a=program_manager()
+a.details()
+a.teaching()
+a.study()'''
+
+#super()
+'''class parent():#super class
+    def __init__(self,name):
+        self.name=name
+        print("parent constructor")
+class child(parent):#sub class
+    def __init__(self,name,age):
+        self.age=age
+        super().__init__(name)
+        print("child constructor")
+a=child("sai",23)
+print(dir(a))
+print(a.name)
+print(a.age)'''
+
+#encapsulation
+#public data
+'''class parent():
+    publicdata=100
+    def method1(self):
+        print(self.publicdata)
+class child(parent):
+    def method2(self):
+        print(self.publicdata)
+obj1=child()
+obj1.method1()
+obj1.method2()'''
+
+#_protecteddata()
+'''class parent():
+    _protecteddata=10
+    def method1(self):
+        print(self._protectddata)
+class child():
+    def method2(self):
+        print(self._protecteddata)
+obj1=child()
+obj1.method1()
+obj1.method2()
+print(obj1.__class_protecteddata)'''
 
 
-
-
-
-
-
-
+#private data
+'''class parent():
+    __privatedata="sai"
+    def method1(self):
+        print(self.__privatedata)
+class child(parent):
+    def method2(self):
+        print(self._parent__privatedata)
+obj1=child()
+obj1.method1()
+obj1.method2()'''
 
 
 
