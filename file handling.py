@@ -26,10 +26,13 @@ a.close()'''
 #print(a.readline(8))#it will display no.of characters
 '''
 #writelines()#it makes every object side by side
-a=open("sai.txt","w")
-b=["karthik","kiran","saiteja","kumar"]
+'''a=open("sai.txt","w")
+b=["karthik","kiran","saiteja","kumar","mahesh"]
 a.writelines("\n".join(b))
 a.close()
 
-a=open("sample.py")
-print(a.
+a=open("for loop.py")
+print(a.read())
+
+a=open("C:\\Users\\atlur\\OneDrive\\Desktop\\PFS-037\\Functions.py")
+print(a.read())'''
